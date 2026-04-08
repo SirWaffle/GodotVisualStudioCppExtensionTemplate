@@ -1,4 +1,4 @@
-# Godot visual studio 2022 template
+# Godot visual studio 2022 CPP extension template
 A quick setup project for godot cppExtensions, a godot project, and visual studio sln + proj file, that I use as a base for godot cpp extension projects for myself.
 
 - Contains godot 4.6 executable (can be changed easily)
