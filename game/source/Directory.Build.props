@@ -1,0 +1,15 @@
+<Project>
+   <PropertyGroup>
+      <CPPExtOutDir>..\..\godotProj\bin\</CPPExtOutDir>
+      <TempBuildDir>..\temp-build\</TempBuildDir>
+      <Externals>..\external\</Externals>
+
+      <GodotCPPRoot>$(Externals)godot-cpp\4.6\</GodotCPPRoot>
+
+      <GodotVersion>Godot_v4.6.2-stable_win64</GodotVersion>
+
+      <ProjectRoot>C:\wj\GodotCppExperiments\</ProjectRoot>
+      <GodotProjWorkingDir>$(ProjectRoot)\game\godotProj\</GodotProjWorkingDir>
+      <GodotEXE>$(ProjectRoot)game\godotExe\$(GodotVersion)\$(GodotVersion).exe</GodotEXE>
+   </PropertyGroup>
+</Project>

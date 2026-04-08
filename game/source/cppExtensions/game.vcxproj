@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Editor_Exts|Win32">
+      <Configuration>Debug_Editor_Exts</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Editor_Exts|x64">
+      <Configuration>Debug_Editor_Exts</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Game_Exts|Win32">
+      <Configuration>Debug_Game_Exts</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Game_Exts|x64">
+      <Configuration>Debug_Game_Exts</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Game_Lib|x64">
+      <Configuration>Debug_Game_Lib</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Game_Lib|x64">
+      <Configuration>Release_Game_Lib</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{710c6b44-6283-4410-86bd-8243cd6580fb}</ProjectGuid>
+    <RootNamespace>GDExtensionVS</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor_Exts|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Game_Exts|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor_Exts|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Game_Exts|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Game_Lib|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Game_Lib|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor_Exts|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Game_Exts|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor_Exts|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Game_Exts|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Game_Lib|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Game_Lib|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor_Exts|x64'">
+    <OutDir>$(ProjectDir)$(CPPExtOutDir)$(ProjectName)\</OutDir>
+    <IncludePath>$(ProjectDir)$(GodotCPPRoot)gdextension;$(ProjectDir)$(GodotCPPRoot)\gen\include;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp\classes;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp\core;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp\variant;$(ProjectDir)$(GodotCPPRoot)\include;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\classes;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\core;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\templates;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\variant;$(ProjectDir)external\flecs\include;$(ProjectDir)external\nlohmann_json\single_include;$(ProjectDir)\cppExtensions\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)$(GodotCPPRoot)\bin;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName).windows.template_debug.x86_64</TargetName>
+    <IntDir>$(ProjectDir)$(TempBuildDir)$(ShortProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Game_Exts|x64'">
+    <OutDir>$(ProjectDir)$(CPPExtOutDir)$(ProjectName)\</OutDir>
+    <IncludePath>$(ProjectDir)$(GodotCPPRoot)gdextension;$(ProjectDir)$(GodotCPPRoot)\gen\include;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp\classes;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp\core;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp\variant;$(ProjectDir)$(GodotCPPRoot)\include;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\classes;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\core;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\templates;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\variant;$(ProjectDir)external\flecs\include;$(ProjectDir)external\nlohmann_json\single_include;$(ProjectDir)\cppExtensions\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)$(GodotCPPRoot)\bin;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName).windows.template_debug.x86_64</TargetName>
+    <IntDir>$(ProjectDir)$(TempBuildDir)$(ShortProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Game_Lib|x64'">
+    <OutDir>$(ProjectDir)lib\$(ProjectName)\</OutDir>
+    <IncludePath>$(ProjectDir)$(GodotCPPRoot)gdextension;$(ProjectDir)$(GodotCPPRoot)\gen\include;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp\classes;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp\core;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp\variant;$(ProjectDir)$(GodotCPPRoot)\include;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\classes;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\core;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\templates;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\variant;$(ProjectDir)external\flecs\include;$(ProjectDir)external\nlohmann_json\single_include;$(ProjectDir)\cppExtensions\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)$(GodotCPPRoot)\bin;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName).windows.template_debug.static.x86_64</TargetName>
+    <IntDir>$(ProjectDir)$(TempBuildDir)$(ShortProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Game_Lib|x64'">
+    <OutDir>$(ProjectDir)lib\$(ProjectName)\</OutDir>
+    <IncludePath>$(ProjectDir)$(GodotCPPRoot)gdextension;$(ProjectDir)$(GodotCPPRoot)\gen\include;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp\classes;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp\core;$(ProjectDir)$(GodotCPPRoot)\gen\include\godot_cpp\variant;$(ProjectDir)$(GodotCPPRoot)\include;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\classes;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\core;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\templates;$(ProjectDir)$(GodotCPPRoot)\include\godot_cpp\variant;$(ProjectDir)external\flecs\include;$(ProjectDir)external\nlohmann_json\single_include;$(ProjectDir)\cppExtensions\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)$(GodotCPPRoot)\bin;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName).windows.template_release.static.x86_64</TargetName>
+    <IntDir>$(ProjectDir)$(TempBuildDir)$(ShortProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor_Exts|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Game_Exts|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Editor_Exts|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>flecs_STATIC;WIN64;TYPED_METHOD_BIND;NOMINMAX;HOT_RELOAD_ENABLED;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)$(GodotCPPRoot)\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libgodot-cpp.windows.template_debug.x86_64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Game_Exts|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>flecs_STATIC;WIN64;TYPED_METHOD_BIND;NOMINMAX;HOT_RELOAD_ENABLED;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)$(GodotCPPRoot)\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libgodot-cpp.windows.template_debug.x86_64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Game_Lib|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>flecs_STATIC;WIN64;TYPED_METHOD_BIND;NOMINMAX;HOT_RELOAD_ENABLED;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Game_Lib|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>flecs_STATIC;WIN64;TYPED_METHOD_BIND;NOMINMAX;HOT_RELOAD_ENABLED;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Lib>
+      <LinkTimeCodeGeneration>false</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  
+  
+  <ItemGroup>
+    <ClCompile Include="game\register_types.cpp" />
+    <ClCompile Include="shared\ClassRegistrationList.cpp" />
+  </ItemGroup><ItemGroup>
+    <ClInclude Include="game\register_types.h" />
+    <ClInclude Include="shared\ClassRegistration.h" />
+    <ClInclude Include="shared\ClassRegistrationList.h" />
+    <ClInclude Include="shared\IRegisterClass.h" />
+    <ClInclude Include="shared\StaticRegisterClass.h" />
+  </ItemGroup><Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

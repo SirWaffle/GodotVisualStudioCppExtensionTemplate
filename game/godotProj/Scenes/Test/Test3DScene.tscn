@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://351lsnoc2sm0"]
+
+[node name="ChessBoard" type="ChessBoard3D"]
+ruleset_path = "res://Data/Chess/default_ruleset.json"
+debug_logging_enabled = true
+debug_verbosity = 2

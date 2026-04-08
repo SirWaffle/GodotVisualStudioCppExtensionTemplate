@@ -1,0 +1,38 @@
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+
+# MSBuild / C++
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+temp-build/
+game/source/temp-build/
+*.tlog
+*.lastbuildstate
+*.idb
+*.ilk
+*.pdb
+*.ipdb
+*.iobj
+
+# Godot generated data
+.godot/
+*.import
+
+# Godot Mono / .NET generated data
+.mono/
+.tmp/
+
+# OS noise
+Thumbs.db
+Desktop.ini

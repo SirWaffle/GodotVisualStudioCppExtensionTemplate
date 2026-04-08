@@ -1,0 +1,84 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "external", "external", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "godot", "external\godot\4.6\godot.vcxproj", "{5935682B-822A-4F53-92ED-94C1DC10364F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cppExtensions", "cppExtensions", "{C5630A79-63E4-4EAE-8C4F-678B53E4622F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game", "cppExtensions\game.vcxproj", "{710C6B44-6283-4410-86BD-8243CD6580FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_Editor_Exts|x64 = Debug_Editor_Exts|x64
+		Debug_Editor_Exts|x86 = Debug_Editor_Exts|x86
+		Debug_Game_Exts|x64 = Debug_Game_Exts|x64
+		Debug_Game_Exts|x86 = Debug_Game_Exts|x86
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		editor|x64 = editor|x64
+		editor|x86 = editor|x86
+		template_debug|x64 = template_debug|x64
+		template_debug|x86 = template_debug|x86
+		template_release|x64 = template_release|x64
+		template_release|x86 = template_release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.Debug_Editor_Exts|x64.ActiveCfg = Debug_Editor_Exts|x64
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.Debug_Editor_Exts|x86.ActiveCfg = Debug_Editor_Exts|Win32
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.Debug_Game_Exts|x64.ActiveCfg = editor|x64
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.Debug_Game_Exts|x86.ActiveCfg = Debug_Game_Exts|Win32
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.Debug_Game_Exts|x86.Build.0 = Debug_Game_Exts|Win32
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.Debug|x64.ActiveCfg = Debug_Game_Exts|x64
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.Debug|x64.Build.0 = Debug_Game_Exts|x64
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.Debug|x86.ActiveCfg = template_debug|Win32
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.Debug|x86.Build.0 = template_debug|Win32
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.editor|x64.ActiveCfg = editor|x64
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.editor|x86.ActiveCfg = editor|Win32
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.editor|x86.Build.0 = editor|Win32
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.template_debug|x64.ActiveCfg = template_debug|x64
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.template_debug|x64.Build.0 = template_debug|x64
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.template_debug|x86.ActiveCfg = template_debug|Win32
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.template_debug|x86.Build.0 = template_debug|Win32
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.template_release|x64.ActiveCfg = template_release|x64
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.template_release|x64.Build.0 = template_release|x64
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.template_release|x86.ActiveCfg = template_release|Win32
+		{5935682B-822A-4F53-92ED-94C1DC10364F}.template_release|x86.Build.0 = template_release|Win32
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.Debug_Editor_Exts|x64.ActiveCfg = Debug_Editor_Exts|x64
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.Debug_Editor_Exts|x64.Build.0 = Debug_Editor_Exts|x64
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.Debug_Editor_Exts|x86.ActiveCfg = Debug_Editor_Exts|Win32
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.Debug_Editor_Exts|x86.Build.0 = Debug_Editor_Exts|Win32
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.Debug_Game_Exts|x64.ActiveCfg = Debug_Game_Exts|x64
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.Debug_Game_Exts|x64.Build.0 = Debug_Game_Exts|x64
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.Debug_Game_Exts|x86.ActiveCfg = Debug_Game_Exts|Win32
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.Debug_Game_Exts|x86.Build.0 = Debug_Game_Exts|Win32
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.Debug|x64.ActiveCfg = Debug_Editor_Exts|x64
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.Debug|x64.Build.0 = Debug_Editor_Exts|x64
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.Debug|x86.ActiveCfg = Debug_Editor_Exts|Win32
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.Debug|x86.Build.0 = Debug_Editor_Exts|Win32
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.editor|x64.ActiveCfg = Debug_Editor_Exts|x64
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.editor|x64.Build.0 = Debug_Editor_Exts|x64
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.editor|x86.ActiveCfg = Debug_Editor_Exts|Win32
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.editor|x86.Build.0 = Debug_Editor_Exts|Win32
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.template_debug|x64.ActiveCfg = Debug_Editor_Exts|x64
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.template_debug|x64.Build.0 = Debug_Editor_Exts|x64
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.template_debug|x86.ActiveCfg = Debug_Editor_Exts|Win32
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.template_debug|x86.Build.0 = Debug_Editor_Exts|Win32
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.template_release|x64.ActiveCfg = Debug_Editor_Exts|x64
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.template_release|x64.Build.0 = Debug_Editor_Exts|x64
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.template_release|x86.ActiveCfg = Debug_Editor_Exts|Win32
+		{710C6B44-6283-4410-86BD-8243CD6580FB}.template_release|x86.Build.0 = Debug_Editor_Exts|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5935682B-822A-4F53-92ED-94C1DC10364F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{710C6B44-6283-4410-86BD-8243CD6580FB} = {C5630A79-63E4-4EAE-8C4F-678B53E4622F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04a399c4-a1b8-441e-8b18-07d776e2a1db}
+	EndGlobalSection
+EndGlobal

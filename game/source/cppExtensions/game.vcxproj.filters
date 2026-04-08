@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="game\register_types.cpp" />
+    <ClCompile Include="shared\ClassRegistrationList.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game\register_types.h" />
+    <ClInclude Include="shared\ClassRegistration.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\ClassRegistrationList.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\IRegisterClass.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\StaticRegisterClass.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="shared">
+      <UniqueIdentifier>{3cf9f839-96d8-428f-a14f-df4339219322}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
