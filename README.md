@@ -6,7 +6,7 @@ A quick setup project for godot cppExtensions, a godot project, and visual studi
 - Contains a Visual Studio 2022 SLN in /game/source that contains a single, runable / debuggable cpp extension named game
 - Contains a cpp extension project named game, with an example registration, and CubeNode3D
 - A mostly empty Godot test scene, with a CubeNode3D example cppExtenion derrived Node3D
-- A bat file to build release/debug libs in /game/source/external/godot-cpp. It calls scons, so python + scons is required for godot-cpp building
+- A bat file to build release/debug libs for godot-cpp in /game/source/external/godot-cpp. It calls scons, so python + scons is required for godot-cpp building
 
 # Submodules
 - godot-cpp for godot 4.6 as a submodule in /game/source/external/godot-cpp/(version)
