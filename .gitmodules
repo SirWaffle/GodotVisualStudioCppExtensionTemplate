@@ -1,15 +1,6 @@
-[submodule "game/tools/godot-mcp"]
-	path = game/tools/godot-mcp
-	url = https://github.com/Coding-Solo/godot-mcp.git
-[submodule "game/source/external/godot/4.6"]
-	path = game/source/external/godot/4.6
-	url = https://github.com/godotengine/godot.git
 [submodule "game/source/external/godot-cpp/4.6"]
 	path = game/source/external/godot-cpp/4.6
 	url = https://github.com/godotengine/godot-cpp.git
-[submodule "game/source/external/flecs"]
-	path = game/source/external/flecs
-	url = https://github.com/SanderMertens/flecs.git
-[submodule "game/source/external/nlohmann_json"]
-	path = game/source/external/nlohmann_json
+[submodule "game/source/external/json"]
+	path = game/source/external/nlohmann-json
 	url = https://github.com/nlohmann/json.git
