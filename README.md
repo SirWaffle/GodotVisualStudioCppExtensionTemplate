@@ -5,6 +5,7 @@ A quick setup project for godot cppExtensions, a godot project, and visual studi
 - project settings / setup / versions / godot executable / paths are handled by the game/source/Directory.Build.Props file
 - Contains a Visual Studio 2022 SLN in /game/source that contains a single, runable / debuggable cpp extension named game
 - Contains a cpp extension project named game, with an example registration, and CubeNode3D
+- vcxproj post build hookup that copies the built DLL to the correct location in the godot project ( /bin/(extensionName)/ )
 - A mostly empty Godot test scene, with a CubeNode3D example cppExtenion derrived Node3D
 - A bat file to build release/debug libs for godot-cpp in /game/source/external/godot-cpp. It calls scons, so python + scons is required for godot-cpp building
 
