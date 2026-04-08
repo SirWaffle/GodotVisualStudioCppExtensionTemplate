@@ -14,8 +14,8 @@ A quick setup project for godot cppExtensions, a godot project, and visual studi
 
 
 # Quick start
-- open /game/source/Directory.Build.Props, and change the hard coded path that is not relative that must be set:
-<ProjectRoot>C:\code\GodotVisualStudioCppExtensionTemplate\</ProjectRoot>
+- open /game/source/Directory.Build.Props, and change the hard coded path in ProjectRoot that is not relative that must be set:
+ it should point to the root checkout dir of the git repo: C:\code\GodotVisualStudioCppExtensionTemplate\
 
 - build godot-cpp:
   requires an installation of python + scons
